@@ -10,7 +10,7 @@
 ==================================================*/
 
 const loader = document.getElementById("loader");
-const opening = document.getElementById("welcome");
+const opening = document.getElementById("opening");
 const envelope = document.getElementById("envelope");
 const invitation = document.getElementById("invitation");
 
