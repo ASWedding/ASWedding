@@ -1,76 +1,80 @@
-/* ==========================================
-   ASWedding v2.0
-   Premium Wedding Invitation
-========================================== */
+/*=========================================
+ASWedding 2.0
+Premium Invitation
+=========================================*/
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
 
 :root{
 
-    --gold:#C9A14A;
-    --gold-light:#E7C978;
-    --cream:#FCF8F1;
-    --cream-dark:#F5EFE5;
-    --text:#4D4338;
-    --shadow:0 20px 50px rgba(0,0,0,.12);
+--gold:#C9A14A;
+--gold2:#E6C36B;
+--cream:#FCF9F4;
+--cream2:#F5EFE4;
+--text:#50453B;
+--white:#ffffff;
+
+--shadow:
+0 20px 45px rgba(0,0,0,.12);
+
+}
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
 
 }
 
 html{
 
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 
 }
 
 body{
 
-    background:linear-gradient(
-    180deg,
-    #fffdf9,
-    #faf6ef,
-    #f7f1e6);
+background:linear-gradient(
+180deg,
+#ffffff,
+#faf6ef,
+#f4ede2);
 
-    font-family:'Poppins',sans-serif;
+font-family:'Poppins',sans-serif;
 
-    color:var(--text);
+color:var(--text);
 
-    overflow-x:hidden;
+overflow-x:hidden;
 
 }
 
-/* ========================= */
+/*========================*/
+
+img{
+
+display:block;
+max-width:100%;
+
+}
 
 a{
 
 text-decoration:none;
-
 color:inherit;
-
-}
-
-img{
-
-max-width:100%;
-
-display:block;
 
 }
 
 button{
 
 font-family:inherit;
-
 cursor:pointer;
 
 }
 
-/* ===========================
-LOADER
-=========================== */
+/*==========================
+Loader
+==========================*/
 
 #loader{
 
@@ -78,7 +82,7 @@ position:fixed;
 
 inset:0;
 
-background:#faf6ef;
+background:var(--cream);
 
 display:flex;
 
@@ -88,15 +92,15 @@ align-items:center;
 
 z-index:99999;
 
-transition:.8s;
+transition:1s;
 
 }
 
 .loader-logo{
 
-width:120px;
+width:130px;
 
-height:120px;
+height:130px;
 
 border-radius:50%;
 
@@ -108,17 +112,17 @@ justify-content:center;
 
 align-items:center;
 
-font-size:60px;
-
 font-family:'Cormorant Garamond',serif;
+
+font-size:58px;
 
 color:var(--gold);
 
-animation:loaderPulse 2s infinite;
+animation:pulse 2s infinite;
 
 }
 
-@keyframes loaderPulse{
+@keyframes pulse{
 
 0%{
 
@@ -130,7 +134,7 @@ opacity:.6;
 
 50%{
 
-transform:scale(1.1);
+transform:scale(1.08);
 
 opacity:1;
 
@@ -146,9 +150,9 @@ opacity:.6;
 
 }
 
-/* ===========================
-BACKGROUND
-=========================== */
+/*==========================
+Background
+==========================*/
 
 .background{
 
@@ -156,9 +160,9 @@ position:fixed;
 
 inset:0;
 
-z-index:-5;
-
 overflow:hidden;
+
+z-index:-10;
 
 }
 
@@ -166,27 +170,27 @@ overflow:hidden;
 
 position:absolute;
 
-top:-250px;
+width:800px;
+
+height:800px;
+
+border-radius:50%;
+
+background:rgba(201,161,74,.12);
+
+filter:blur(150px);
+
+top:-300px;
 
 left:50%;
 
 transform:translateX(-50%);
 
-width:700px;
-
-height:700px;
-
-border-radius:50%;
-
-background:rgba(201,161,74,.15);
-
-filter:blur(150px);
-
 }
 
-/* ===========================
-MUSIC BUTTON
-=========================== */
+/*==========================
+Music
+==========================*/
 
 #musicButton{
 
@@ -196,9 +200,9 @@ top:25px;
 
 right:25px;
 
-width:60px;
+width:58px;
 
-height:60px;
+height:58px;
 
 border:none;
 
@@ -206,18 +210,18 @@ border-radius:50%;
 
 background:linear-gradient(
 135deg,
-var(--gold-light),
+var(--gold2),
 var(--gold));
 
 color:white;
 
-font-size:24px;
+font-size:22px;
 
 box-shadow:var(--shadow);
 
-z-index:999;
-
 transition:.35s;
+
+z-index:999;
 
 }
 
@@ -227,9 +231,9 @@ transform:scale(1.1);
 
 }
 
-/* ===========================
-WELCOME
-=========================== */
+/*==========================
+Welcome
+==========================*/
 
 #welcome{
 
@@ -253,9 +257,9 @@ text-align:center;
 
 }
 
-/* ===========================
-ENVELOPE
-=========================== */
+/*==========================
+Envelope
+==========================*/
 
 #envelope{
 
@@ -263,13 +267,15 @@ position:relative;
 
 width:360px;
 
-height:240px;
+height:235px;
 
 margin:auto;
 
 cursor:pointer;
 
 transition:1s;
+
+perspective:1000px;
 
 }
 
@@ -285,13 +291,13 @@ height:100%;
 
 background:linear-gradient(
 180deg,
-#fffdf9,
-#efe5d5);
+#fffefc,
+#efe3cf);
 
-border-radius:0 0 12px 12px;
+border-radius:0 0 14px 14px;
 
 box-shadow:
-0 25px 60px rgba(0,0,0,.15);
+0 30px 60px rgba(0,0,0,.15);
 
 }
 
@@ -307,19 +313,18 @@ width:100%;
 
 height:140px;
 
-background:#e8dcc9;
+background:#e9dbc5;
 
 clip-path:polygon(
 0 0,
 100% 0,
-50% 100%
-);
+50% 100%);
 
 transform-origin:top;
 
 transition:1s;
 
-z-index:3;
+z-index:4;
 
 }
 
@@ -329,7 +334,7 @@ position:absolute;
 
 left:50%;
 
-top:90px;
+top:88px;
 
 transform:translateX(-50%);
 
@@ -340,16 +345,10 @@ height:72px;
 border-radius:50%;
 
 background:
-
 linear-gradient(
-
 135deg,
-
-#f6dd9b,
-
-#c89d3d
-
-);
+#f6dd98,
+#c59532);
 
 display:flex;
 
@@ -364,22 +363,21 @@ font-family:'Cormorant Garamond',serif;
 color:white;
 
 box-shadow:
+0 10px 25px rgba(0,0,0,.2);
 
-0 10px 25px rgba(0,0,0,.25);
-
-z-index:10;
+z-index:6;
 
 }
 
 .touch-text{
 
-margin-top:45px;
+margin-top:40px;
 
 font-size:18px;
 
 letter-spacing:3px;
 
-color:#8b7356;
+color:#8a7151;
 
 animation:float 2s infinite;
 
@@ -405,673 +403,45 @@ transform:translateY(0);
 
 }
 
-  }
-/* ==========================================
-   INVITATION CARD
-========================================== */
-
-#invitation{
-
-    padding:100px 20px;
-
-    display:flex;
-
-    justify-content:center;
-
 }
 
-.invitation-card{
-
-    width:95%;
-
-    max-width:950px;
-
-    background:rgba(255,255,255,.75);
-
-    backdrop-filter:blur(12px);
-
-    border:1px solid rgba(201,161,74,.25);
-
-    border-radius:35px;
-
-    padding:70px 60px;
-
-    box-shadow:0 25px 60px rgba(0,0,0,.10);
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-.invitation-card::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:280px;
-
-    height:280px;
-
-    border-radius:50%;
-
-    background:rgba(201,161,74,.08);
-
-    top:-120px;
-
-    right:-120px;
-
-    filter:blur(35px);
-
-}
-
-.invitation-card::after{
-
-    content:"";
-
-    position:absolute;
-
-    width:240px;
-
-    height:240px;
-
-    border-radius:50%;
-
-    background:rgba(255,255,255,.45);
-
-    bottom:-120px;
-
-    left:-120px;
-
-    filter:blur(40px);
-
-}
-
-.subtitle{
-
-    color:var(--gold);
-
-    letter-spacing:6px;
-
-    text-transform:uppercase;
-
-    font-size:16px;
-
-    margin-bottom:25px;
-
-}
-
-.invitation-card h1{
-
-    font-family:'Great Vibes',cursive;
-
-    font-size:90px;
-
-    color:var(--gold);
-
-    font-weight:400;
-
-    margin-bottom:20px;
-
-}
-
-.invitation-card h1 span{
-
-    margin:0 15px;
-
-    font-size:65px;
-
-}
-
-.welcome-text{
-
-    max-width:720px;
-
-    margin:auto;
-
-    line-height:36px;
-
-    font-size:20px;
-
-    color:#666;
-
-}
-
-/* ==========================================
-   COUNTDOWN
-========================================== */
-
-.countdown-section{
-
-    margin-top:70px;
-
-}
-
-.countdown{
-
-    display:flex;
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:20px;
-
-    margin-top:40px;
-
-}
-
-.time-box{
-
-    width:130px;
-
-    height:130px;
-
-    background:white;
-
-    border-radius:28px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
-
-    transition:.35s;
-
-}
-
-.time-box:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.time-box span{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:52px;
-
-    color:var(--gold);
-
-    font-weight:700;
-
-}
-
-.time-box small{
-
-    margin-top:10px;
-
-    letter-spacing:2px;
-
-    color:#777;
-
-}
-
-/* ==========================================
-   EVENT INFO
-========================================== */
-
-.event-info{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:25px;
-
-    margin-top:70px;
-
-}
-
-.info-card{
-
-    background:white;
-
-    padding:35px;
-
-    border-radius:25px;
-
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-
-    transition:.35s;
-
-}
-
-.info-card:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.icon{
-
-    font-size:42px;
-
-    margin-bottom:18px;
-
-}
-
-.info-card h3{
-
-    color:var(--gold);
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:26px;
-
-    margin-bottom:12px;
-
-}
-
-.info-card p{
-
-    color:#666;
-
-    line-height:30px;
-
-}
-
-/* ==========================================
-   BUTTONS
-========================================== */
-
-.location-button,
-.gold-button,
-.rsvp button{
-
-    display:inline-block;
-
-    margin-top:35px;
-
-    padding:18px 42px;
-
-    border:none;
-
-    border-radius:50px;
-
-    background:linear-gradient(
-    135deg,
-    var(--gold-light),
-    var(--gold));
-
-    color:white;
-
-    font-size:17px;
-
-    font-weight:600;
-
-    transition:.35s;
-
-    box-shadow:0 15px 35px rgba(201,161,74,.35);
-
-}
-
-.location-button:hover,
-.gold-button:hover,
-.rsvp button:hover{
-
-    transform:translateY(-5px);
-
-    box-shadow:0 20px 45px rgba(201,161,74,.45);
-
-}
-
-/* ==========================================
-   DECORATIVE FLOWERS
-========================================== */
+/*==========================
+Flowers
+==========================*/
 
 .flower{
 
-    position:absolute;
+position:absolute;
 
-    width:140px;
+width:120px;
 
-    height:140px;
+height:120px;
 
-    border-radius:50%;
+border-radius:50%;
 
-    background:radial-gradient(circle,
-    rgba(255,255,255,.95),
-    rgba(255,255,255,.1));
+background:
+radial-gradient(circle,
+rgba(255,255,255,.95),
+rgba(255,255,255,0));
 
-    filter:blur(2px);
+filter:blur(3px);
 
-    opacity:.9;
+opacity:.9;
 
 }
 
 .flower-left{
 
-    left:-80px;
+left:-70px;
 
-    top:-30px;
+top:-30px;
 
 }
 
 .flower-right{
 
-    right:-80px;
+right:-70px;
 
-    top:-30px;
-
-  }
-/* ==========================================
-   ENVELOPE OPEN ANIMATION
-========================================== */
-
-#envelope.open .envelope-top{
-
-    transform:rotateX(180deg);
-
-}
-
-#envelope.open .seal{
-
-    opacity:0;
-
-    transform:translateX(-50%) scale(.6);
-
-    transition:.5s;
-
-}
-
-/* ==========================================
-   INVITATION START HIDDEN
-========================================== */
-
-#invitation{
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transform:translateY(120px);
-
-    transition:1.2s;
-
-}
-
-#invitation.show{
-
-    opacity:1;
-
-    visibility:visible;
-
-    transform:translateY(0);
-
-}
-
-/* ==========================================
-   GOLD SHINE
-========================================== */
-
-.invitation-card::before{
-
-animation:shine 8s linear infinite;
-
-}
-
-@keyframes shine{
-
-0%{
-
-transform:translateX(-250px);
-
-}
-
-100%{
-
-transform:translateX(850px);
-
-}
-
-}
-
-/* ==========================================
-   FLOAT EFFECT
-========================================== */
-
-.family-card,
-.info-card,
-.time-box{
-
-animation:floating 6s ease-in-out infinite;
-
-}
-
-.family-card:nth-child(2){
-
-animation-delay:1s;
-
-}
-
-.time-box:nth-child(2){
-
-animation-delay:.4s;
-
-}
-
-.time-box:nth-child(3){
-
-animation-delay:.8s;
-
-}
-
-.time-box:nth-child(4){
-
-animation-delay:1.2s;
-
-}
-
-@keyframes floating{
-
-0%,100%{
-
-transform:translateY(0);
-
-}
-
-50%{
-
-transform:translateY(-8px);
-
-}
-
-}
-
-/* ==========================================
-   BUTTON RIPPLE
-========================================== */
-
-.location-button,
-.gold-button,
-.rsvp button{
-
-position:relative;
-
-overflow:hidden;
-
-}
-
-.location-button::after,
-.gold-button::after,
-.rsvp button::after{
-
-content:"";
-
-position:absolute;
-
-width:0;
-
-height:0;
-
-border-radius:50%;
-
-background:rgba(255,255,255,.35);
-
-top:50%;
-
-left:50%;
-
-transform:translate(-50%,-50%);
-
-transition:.6s;
-
-}
-
-.location-button:hover::after,
-.gold-button:hover::after,
-.rsvp button:hover::after{
-
-width:320px;
-
-height:320px;
-
-}
-
-/* ==========================================
-   CUSTOM SCROLLBAR
-========================================== */
-
-::-webkit-scrollbar{
-
-width:10px;
-
-}
-
-::-webkit-scrollbar-track{
-
-background:#f5efe5;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-background:var(--gold);
-
-border-radius:20px;
-
-}
-
-::-webkit-scrollbar-thumb:hover{
-
-background:#b88d37;
-
-}
-
-/* ==========================================
-   MOBILE
-========================================== */
-
-@media(max-width:900px){
-
-.invitation-card{
-
-padding:40px 25px;
-
-}
-
-.invitation-card h1{
-
-font-size:60px;
-
-}
-
-.event-info{
-
-grid-template-columns:1fr;
-
-}
-
-.family-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.time-box{
-
-width:95px;
-
-height:95px;
-
-}
-
-.time-box span{
-
-font-size:36px;
-
-}
-
-#envelope{
-
-width:300px;
-
-height:200px;
-
-}
-
-.seal{
-
-width:60px;
-
-height:60px;
-
-font-size:28px;
-
-}
-
-.touch-text{
-
-font-size:16px;
-
-}
-
-.verse blockquote{
-
-font-size:24px;
-
-line-height:40px;
-
-}
-
-footer h2{
-
-font-size:42px;
-
-}
-
-}
-
-@media(max-width:500px){
-
-.invitation-card h1{
-
-font-size:46px;
-
-}
-
-.subtitle{
-
-letter-spacing:3px;
-
-font-size:14px;
-
-}
-
-.welcome-text{
-
-font-size:16px;
-
-line-height:30px;
-
-}
+top:-30px;
 
 }
