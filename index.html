@@ -1,33 +1,20 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
 
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Ayşenur & Şaban | Söz & Nişan</title>
 
-    <meta name="theme-color"
-          content="#f7f3eb">
+    <meta name="theme-color" content="#f8f4ec">
 
-    <meta name="description"
-          content="Ayşenur & Şaban Söz & Nişan Davetiyesi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
-          rel="stylesheet">
-
-    <link rel="stylesheet"
-          href="style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -51,17 +38,12 @@
 <!-- MUSIC -->
 <!-- ========================= -->
 
-<audio id="music" loop>
-
-    <source src="assets/music/piano.mp3"
-            type="audio/mpeg">
-
+<audio id="music" loop preload="none">
+    <source src="assets/music/piano.mp3" type="audio/mpeg">
 </audio>
 
-<button id="musicButton">
-
+<button id="musicButton" aria-label="Müziği Aç/Kapat">
     🎵
-
 </button>
 
 <!-- ========================= -->
@@ -72,15 +54,13 @@
 
     <div class="gold-glow"></div>
 
-    <div class="particles"></div>
-
 </div>
 
 <!-- ========================= -->
-<!-- ENVELOPE -->
+<!-- OPENING -->
 <!-- ========================= -->
 
-<section id="welcome">
+<section id="opening">
 
     <div class="envelope-container">
 
@@ -96,17 +76,17 @@
 
             <div class="seal">
 
-                <span>AS</span>
+                AS
 
             </div>
 
         </div>
 
-        <h2 class="touch-text">
+        <p class="touch-text">
 
             Dokunarak Aç
 
-        </h2>
+        </p>
 
     </div>
 
@@ -118,95 +98,59 @@
 
 <section id="invitation">
 
-    <div class="invitation-card">
+<div class="invitation-card">
 
-        <p class="subtitle">
+<p class="subtitle">
 
-            Söz & Nişan Daveti
+Söz & Nişan Daveti
 
-        </p>
+</p>
 
-        <h1>
+<h1>
 
-            Ayşenur
+Ayşenur
 
-            <span>&</span>
+<span>&</span>
 
-            Şaban
+Şaban
 
-        </h1>
+</h1>
 
-        <p class="welcome-text">
+<p class="welcome-text">
 
-            Hayatımızın en özel gününde
-            mutluluğumuza ortak olmanız
-            bizleri onurlandıracaktır.
+Hayatımızın en özel gününde sizleri aramızda görmekten mutluluk duyacağız.
 
-        </p>
-
-<!-- ========================= -->
+</p><!-- ========================= -->
 <!-- COUNTDOWN -->
 <!-- ========================= -->
 
 <div class="countdown-section">
 
-<h2>
+    <h2>Büyük Gün İçin Geri Sayım</h2>
 
-Büyük Gün İçin Geri Sayım
+    <div class="countdown">
 
-</h2>
+        <div class="time-box">
+            <span id="days">00</span>
+            <small>GÜN</small>
+        </div>
 
-<div class="countdown">
+        <div class="time-box">
+            <span id="hours">00</span>
+            <small>SAAT</small>
+        </div>
 
-<div class="time-box">
+        <div class="time-box">
+            <span id="minutes">00</span>
+            <small>DAKİKA</small>
+        </div>
 
-<span id="days">
+        <div class="time-box">
+            <span id="seconds">00</span>
+            <small>SANİYE</small>
+        </div>
 
-00
-
-</span>
-
-<small>GÜN</small>
-
-</div>
-
-<div class="time-box">
-
-<span id="hours">
-
-00
-
-</span>
-
-<small>SAAT</small>
-
-</div>
-
-<div class="time-box">
-
-<span id="minutes">
-
-00
-
-</span>
-
-<small>DAKİKA</small>
-
-</div>
-
-<div class="time-box">
-
-<span id="seconds">
-
-00
-
-</span>
-
-<small>SANİYE</small>
-
-</div>
-
-</div>
+    </div>
 
 </div>
 
@@ -216,82 +160,47 @@ Büyük Gün İçin Geri Sayım
 
 <div class="event-info">
 
-<div class="info-card">
+    <div class="info-card">
 
-<div class="icon">
+        <div class="icon">📅</div>
 
-📅
+        <h3>Tarih</h3>
 
-</div>
+        <p>26 Temmuz 2026</p>
 
-<h3>
+    </div>
 
-Tarih
+    <div class="info-card">
 
-</h3>
+        <div class="icon">🕗</div>
 
-<p>
+        <h3>Saat</h3>
 
-26 Temmuz 2026
+        <p>20:00</p>
 
-</p>
+    </div>
 
-</div>
+    <div class="info-card">
 
-<div class="info-card">
+        <div class="icon">📍</div>
 
-<div class="icon">
+        <h3>Mekân</h3>
 
-🕗
+        <p>Defne Organizasyon Davet Evi</p>
 
-</div>
-
-<h3>
-
-Saat
-
-</h3>
-
-<p>
-
-20:00
-
-</p>
+    </div>
 
 </div>
 
-<div class="info-card">
-
-<div class="icon">
-
-📍
-
-</div>
-
-<h3>
-
-Mekan
-
-</h3>
-
-<p>
-
-Defne Organizasyon Davet Evi
-
-</p>
-
-</div>
-
-</div>
 <!-- ========================= -->
 <!-- LOCATION -->
 <!-- ========================= -->
 
 <div class="location-area">
 
-    <a href="https://maps.google.com"
-       target="_blank"
-       class="location-button">
+    <a class="location-button"
+       href="https://maps.google.com"
+       target="_blank">
 
         📍 Konuma Git
 
@@ -305,16 +214,11 @@ Defne Organizasyon Davet Evi
 
 <section class="rsvp">
 
-    <h2>
-
-        Katılım Onayı
-
-    </h2>
+    <h2>Katılım Onayı</h2>
 
     <p>
 
-        Lütfen katılım durumunuzu
-        bizimle paylaşın.
+        Katılım durumunuzu bizimle paylaşabilirseniz çok mutlu oluruz.
 
     </p>
 
@@ -332,7 +236,7 @@ Defne Organizasyon Davet Evi
 
         <input
             type="tel"
-            placeholder="Telefon Numaranız">
+            placeholder="Telefon Numarası">
 
         <button type="submit">
 
@@ -343,31 +247,24 @@ Defne Organizasyon Davet Evi
     </form>
 
 </section>
-
 <!-- ========================= -->
 <!-- PHOTO UPLOAD -->
 <!-- ========================= -->
 
 <section class="photo-upload">
 
-    <h2>
-
-        Anılarınızı Bizimle Paylaşın
-
-    </h2>
+    <h2>Anılarınızı Bizimle Paylaşın</h2>
 
     <p>
 
-        Çektiğiniz fotoğrafları
-        aşağıdaki butondan
-        Google Drive klasörümüze
-        yükleyebilirsiniz.
+        Çektiğiniz fotoğrafları aşağıdaki buton ile
+        Google Drive klasörümüze yükleyebilirsiniz.
 
     </p>
 
     <a href="#"
        class="gold-button"
-       target="_blank">
+       id="uploadPhotos">
 
         📸 Fotoğraf Yükle
 
@@ -381,23 +278,29 @@ Defne Organizasyon Davet Evi
 
 <section class="message-section">
 
-    <h2>
+    <h2>Bizim İçin Bir Mesaj Bırakın</h2>
 
-        Bizim İçin Bir Mesaj Bırakın
+    <form id="messageForm">
 
-    </h2>
+        <input
+            type="text"
+            placeholder="Adınız">
 
-    <textarea
-        placeholder="Güzel dileklerinizi buraya yazabilirsiniz..."></textarea>
+        <textarea
+            placeholder="Güzel dileklerinizi buraya yazabilirsiniz..."></textarea>
 
-    <button
-        class="gold-button">
+        <button
+            type="submit"
+            class="gold-button">
 
-        💌 Mesaj Gönder
+            💌 Mesaj Gönder
 
-    </button>
+        </button>
+
+    </form>
 
 </section>
+
 <!-- ========================= -->
 <!-- FAMILIES -->
 <!-- ========================= -->
@@ -410,15 +313,21 @@ Defne Organizasyon Davet Evi
 
         <div class="family-card">
 
-            <h3>Ayşenur</h3>
+            <h3>Gelin Ailesi</h3>
 
-            <p>Erdoğan & Semiha Akpınar</p>
+            <h4>Ayşenur Akpınar</h4>
+
+            <p>Erdoğan Akpınar</p>
+
+            <p>Semiha Akpınar</p>
 
         </div>
 
         <div class="family-card">
 
-            <h3>Şaban</h3>
+            <h3>Damat Ailesi</h3>
+
+            <h4>Şaban Yerlikaya</h4>
 
             <p>Elif Yerlikaya</p>
 
@@ -436,23 +345,20 @@ Defne Organizasyon Davet Evi
 
 <section class="memorial">
 
-    <h2>
-
-        🕊️ Sevgiyle Anıyoruz
-
-    </h2>
+    <h2>🕊️ Sevgiyle Anıyoruz</h2>
 
     <p>
 
         Bu mutlu günümüzde,
-
+        aramızda olamasalar da
+        kalbimizde yaşamaya devam eden
         kıymetli büyüğümüz
 
-        <strong>Merhum Nurettin Yerlikaya</strong>
+        <strong>
+            Merhum Nurettin Yerlikaya
+        </strong>
 
-        sevgi, saygı ve özlemle
-
-        kalbimizde yaşamaya devam edecektir.
+        sevgi, saygı ve özlemle anıyoruz.
 
     </p>
 
@@ -467,18 +373,15 @@ Defne Organizasyon Davet Evi
     <blockquote>
 
         "Kaynaşmanız için size kendi
-
-        cinsinizden eşler yaratıp
-
-        aranıza sevgi ve merhamet
-
-        koyması da O'nun ayetlerindendir."
+        cinsinizden eşler yaratıp,
+        aranıza sevgi ve merhamet koyması
+        O'nun ayetlerindendir."
 
     </blockquote>
 
     <span>
 
-        Rum Suresi • 21. Ayet
+        Rum Suresi • 21
 
     </span>
 
@@ -490,11 +393,7 @@ Defne Organizasyon Davet Evi
 
 <section class="contact">
 
-    <h2>
-
-        İletişim
-
-    </h2>
+    <h2>İletişim</h2>
 
     <p>
 
@@ -514,13 +413,13 @@ Defne Organizasyon Davet Evi
 
     <p>
 
-        Söz & Nişan Daveti
+        26 Temmuz 2026 • 20.00
 
     </p>
 
     <p>
 
-        26 Temmuz 2026 • 20:00
+        Defne Organizasyon Davet Evi
 
     </p>
 
@@ -535,3 +434,404 @@ Defne Organizasyon Davet Evi
 </body>
 
 </html>
+/*==========================================
+ASWedding 2.0
+Premium Style
+==========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+
+--gold:#c79b45;
+--gold2:#e9cb80;
+
+--cream:#fbf8f3;
+
+--cream2:#f5efe6;
+
+--text:#50453b;
+
+--shadow:0 20px 50px rgba(0,0,0,.12);
+
+}
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:linear-gradient(
+180deg,
+#fffdfb,
+#faf5ed,
+#f6efe4);
+
+color:var(--text);
+
+overflow-x:hidden;
+
+}
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+img{
+
+display:block;
+
+max-width:100%;
+
+}
+
+button{
+
+font-family:inherit;
+
+cursor:pointer;
+
+}
+
+/*==========================
+LOADER
+==========================*/
+
+#loader{
+
+position:fixed;
+
+inset:0;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:var(--cream);
+
+z-index:99999;
+
+transition:1s;
+
+}
+
+.loader-logo{
+
+width:130px;
+
+height:130px;
+
+border-radius:50%;
+
+border:2px solid var(--gold);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:60px;
+
+font-family:'Cormorant Garamond',serif;
+
+color:var(--gold);
+
+animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+opacity:.6;
+
+}
+
+50%{
+
+transform:scale(1.08);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:.6;
+
+}
+
+}
+
+/*==========================
+BACKGROUND
+==========================*/
+
+.background{
+
+position:fixed;
+
+inset:0;
+
+z-index:-5;
+
+overflow:hidden;
+
+}
+
+.gold-glow{
+
+position:absolute;
+
+width:700px;
+
+height:700px;
+
+background:rgba(199,155,69,.15);
+
+border-radius:50%;
+
+filter:blur(150px);
+
+left:50%;
+
+top:-250px;
+
+transform:translateX(-50%);
+
+}
+
+/*==========================
+MUSIC BUTTON
+==========================*/
+
+#musicButton{
+
+position:fixed;
+
+top:20px;
+
+right:20px;
+
+width:58px;
+
+height:58px;
+
+border:none;
+
+border-radius:50%;
+
+background:linear-gradient(
+135deg,
+var(--gold2),
+var(--gold));
+
+color:white;
+
+font-size:22px;
+
+box-shadow:var(--shadow);
+
+transition:.3s;
+
+z-index:999;
+
+}
+
+#musicButton:hover{
+
+transform:scale(1.1);
+
+}
+
+/*==========================
+OPENING
+==========================*/
+
+#opening{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:20px;
+
+}
+
+.envelope-container{
+
+position:relative;
+
+text-align:center;
+
+}
+
+#envelope{
+
+position:relative;
+
+width:360px;
+
+height:235px;
+
+margin:auto;
+
+cursor:pointer;
+
+transition:1s;
+
+}
+
+.envelope-body{
+
+position:absolute;
+
+bottom:0;
+
+width:100%;
+
+height:100%;
+
+background:linear-gradient(
+180deg,
+#fffefb,
+#ece0cd);
+
+border-radius:0 0 14px 14px;
+
+box-shadow:
+0 25px 60px rgba(0,0,0,.15);
+
+}
+
+.envelope-top{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:140px;
+
+background:#e7d8c2;
+
+clip-path:polygon(
+0 0,
+100% 0,
+50% 100%);
+
+transform-origin:top;
+
+transition:1s;
+
+z-index:4;
+
+}
+
+.seal{
+
+position:absolute;
+
+left:50%;
+
+top:88px;
+
+transform:translateX(-50%);
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+background:linear-gradient(
+135deg,
+#f7de98,
+#c69535);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:34px;
+
+color:white;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.25);
+
+z-index:6;
+
+}
+
+.touch-text{
+
+margin-top:35px;
+
+letter-spacing:3px;
+
+font-size:17px;
+
+color:#8d7452;
+
+animation:float 2s infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
