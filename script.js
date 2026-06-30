@@ -32,7 +32,13 @@ const invitation = document.getElementById("invitation");
 
 envelope.addEventListener("click", function () {
 
-    envelope.style.animation = "envelopeOpen .9s forwards";
+    envelope.classList.add("open");
+
+setTimeout(() => {
+
+    envelope.style.animation = "envelopeDisappear .5s forwards";
+
+},800);
 
     setTimeout(() => {
 
