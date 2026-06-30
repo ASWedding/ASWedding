@@ -859,15 +859,25 @@ MAGIC ENVELOPE
 
 #magic-envelope{
 
-position:relative;
+    position:relative;
 
-width:320px;
+    width:420px;
 
-height:220px;
+    height:270px;
 
-margin:auto;
+    margin:auto;
 
-cursor:pointer;
+    cursor:pointer;
+
+    perspective:1200px;
+
+    transition:.4s;
+
+}
+
+#magic-envelope:hover{
+
+    transform:translateY(-8px);
 
 }
 
