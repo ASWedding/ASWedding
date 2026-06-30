@@ -31,29 +31,20 @@ const welcome = document.getElementById("welcome");
 const invitation = document.getElementById("invitation");
 
 envelope.addEventListener("click", function () {
-envelope.addEventListener("click", function () {
 
     envelope.style.animation = "envelopeOpen .9s forwards";
 
     setTimeout(() => {
 
         welcome.style.display = "none";
-
         invitation.style.display = "block";
 
-        invitation.style.animation = "invitationFade 1s ease";
-
         window.scrollTo({
-
-            top:0,
-
-            behavior:"smooth"
-
+            top: 0,
+            behavior: "smooth"
         });
 
-    },900);
-
-});
+    }, 900);
 
 });
 // ===============================
