@@ -31,6 +31,7 @@ const welcome = document.getElementById("welcome");
 const invitation = document.getElementById("invitation");
 
 envelope.addEventListener("click", function () {
+    alert("Tıklandı");
 
     envelope.style.animation = "envelopeOpen .9s forwards";
 
