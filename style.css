@@ -234,20 +234,29 @@ WELCOME
 
 #envelope{
 
-    width:320px;
+    width:340px;
+    max-width:90vw;
+
+    display:block;
+    margin:auto;
 
     cursor:pointer;
 
-    transition:.6s;
+    filter:drop-shadow(0 25px 35px rgba(0,0,0,.18));
+
+    transition:
+        transform .7s ease,
+        filter .5s ease;
 
 }
 
 #envelope:hover{
 
-    transform:scale(1.04);
+    transform:scale(1.05);
+
+    filter:drop-shadow(0 35px 45px rgba(0,0,0,.25));
 
 }
-
 .touch-text{
 
     margin-top:35px;
