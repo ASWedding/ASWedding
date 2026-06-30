@@ -26,7 +26,7 @@ window.addEventListener("load", function () {
 // Zarf Açılışı
 // ===============================
 
-const envelope = document.getElementById("magic-envelope");
+const envelope = document.getElementById("envelope");
 const welcome = document.getElementById("welcome");
 const invitation = document.getElementById("invitation");
 
