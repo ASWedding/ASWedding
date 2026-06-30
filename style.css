@@ -1164,3 +1164,70 @@ ENVELOPE OPEN ANIMATION
 .wax small{
     font-size:16px;
 }
+/*==================================================
+PREMIUM DETAYLAR
+==================================================*/
+
+.letter-logo{
+
+    letter-spacing:4px;
+
+    text-shadow:
+        0 1px 0 #fff,
+        0 2px 0 #f7eddc,
+        0 3px 4px rgba(0,0,0,.12);
+
+}
+
+.wax{
+
+    border:3px solid #d5a94f;
+
+}
+
+.wax::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:8px;
+
+    border-radius:50%;
+
+    border:1px dashed rgba(255,255,255,.45);
+
+}
+
+#envelope::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-15%;
+    top:-15%;
+
+    width:130%;
+    height:130%;
+
+    background:linear-gradient(
+        120deg,
+        transparent 0%,
+        rgba(255,255,255,.22) 45%,
+        transparent 70%
+    );
+
+    transform:translateX(-130%) rotate(12deg);
+
+    pointer-events:none;
+
+}
+
+#envelope:hover::after{
+
+    transition:1.2s;
+
+    transform:translateX(130%) rotate(12deg);
+
+}
