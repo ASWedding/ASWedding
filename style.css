@@ -799,3 +799,48 @@ MOBİL UYUMLULUK
     }
 
 }
+/*===================================
+ZARF ANİMASYONU
+===================================*/
+
+@keyframes envelopeOpen{
+
+0%{
+transform:scale(1) rotate(0deg);
+opacity:1;
+}
+
+35%{
+transform:scale(1.05) rotate(-2deg);
+}
+
+70%{
+transform:scale(.95) rotate(2deg);
+}
+
+100%{
+transform:scale(.2);
+opacity:0;
+}
+
+}
+
+@keyframes invitationFade{
+
+0%{
+
+opacity:0;
+
+transform:translateY(60px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
