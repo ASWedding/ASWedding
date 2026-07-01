@@ -1231,3 +1231,191 @@ PREMIUM DETAYLAR
     transform:translateX(130%) rotate(12deg);
 
 }
+/*==================================================
+PREMIUM ENVELOPE PART 1
+==================================================*/
+
+#envelope{
+    position:relative;
+    width:340px;
+    height:230px;
+    margin:auto;
+    cursor:pointer;
+    perspective:1200px;
+    filter:drop-shadow(0 25px 40px rgba(0,0,0,.18));
+}
+
+.env-back{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:150px;
+    background:#fffdfa;
+    border:1px solid #ece2d4;
+    border-radius:0 0 18px 18px;
+    z-index:1;
+}
+
+.env-left{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:50%;
+    height:150px;
+    background:#f8f5ef;
+    clip-path:polygon(0 100%,100% 0,100% 100%);
+    z-index:3;
+}
+
+.env-right{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:50%;
+    height:150px;
+    background:#f6f2eb;
+    clip-path:polygon(0 0,100% 100%,0 100%);
+    z-index:3;
+}
+
+.env-top{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:112px;
+    background:#fff;
+    clip-path:polygon(0 0,100% 0,50% 100%);
+    transform-origin:top center;
+    z-index:5;
+}
+
+.letter{
+    position:absolute;
+    left:50%;
+    bottom:10px;
+    transform:translateX(-50%);
+    width:88%;
+    height:150px;
+    background:#fff;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 8px 22px rgba(0,0,0,.08);
+    z-index:2;
+/*==================================================
+PREMIUM ENVELOPE PART 2
+==================================================*/
+
+/* MÜHÜR */
+
+.seal{
+
+    position:absolute;
+
+    left:50%;
+    top:78px;
+
+    transform:translateX(-50%);
+
+    width:74px;
+    height:74px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle at 30% 30%,#f2d58c,#c6952f);
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    color:#fff;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:24px;
+
+    letter-spacing:2px;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.22),
+    inset 0 2px 5px rgba(255,255,255,.35);
+
+    border:3px solid #d7ae54;
+
+    z-index:20;
+
+}
+
+/* Balmumu halkası */
+
+.seal::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:8px;
+
+    border-radius:50%;
+
+    border:1px dashed rgba(255,255,255,.35);
+
+}
+
+/* İç kart logosu */
+
+.letter-logo{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:62px;
+
+    color:#b28b4b;
+
+    text-shadow:
+
+        0 1px 0 #fff,
+
+        0 3px 8px rgba(0,0,0,.12);
+
+}
+
+.letter-logo span{
+
+    margin:0 10px;
+
+}
+
+/* Kabartma yazı */
+
+.env-back::after{
+
+    content:"Ayşenur & Şaban";
+
+    position:absolute;
+
+    top:55px;
+
+    width:100%;
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:22px;
+
+    color:#ece5d8;
+
+    letter-spacing:2px;
+
+    text-shadow:
+
+        -1px -1px 0 #fff,
+
+        1px 1px 0 #ddd;
+
+   }
