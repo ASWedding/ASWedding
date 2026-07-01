@@ -1034,7 +1034,7 @@ PREMIUM ENVELOPE v2
     left:0;
     bottom:0;
     width:100%;
-    height:155px;
+    height:138px;
     background:#fffdfa;
     border:1px solid #ebe2d4;
     border-radius:0 0 18px 18px;
@@ -1047,7 +1047,7 @@ PREMIUM ENVELOPE v2
     left:0;
     bottom:0;
     width:50%;
-    height:155px;
+    height:118px;
     background:#f8f5ef;
     clip-path:polygon(0 100%,100% 0,100% 100%);
     z-index:3;
@@ -1058,7 +1058,7 @@ PREMIUM ENVELOPE v2
     right:0;
     bottom:0;
     width:50%;
-    height:155px;
+    height:118px;
     background:#f6f2eb;
     clip-path:polygon(0 0,100% 100%,0 100%);
     z-index:3;
@@ -1079,7 +1079,7 @@ PREMIUM ENVELOPE v2
 .letter{
     position:absolute;
     left:50%;
-    bottom:22px;
+    bottom:10px;
     transform:translateX(-50%);
     width:88%;
     height:155px;
