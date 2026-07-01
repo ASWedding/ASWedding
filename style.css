@@ -1303,7 +1303,9 @@ PREMIUM ENVELOPE PART 1
     justify-content:center;
     align-items:center;
     box-shadow:0 8px 22px rgba(0,0,0,.08);
-    z-index:2;
+    z-index:2
+}
+
 /*==================================================
 PREMIUM ENVELOPE PART 2
 ==================================================*/
