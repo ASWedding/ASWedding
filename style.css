@@ -1042,19 +1042,22 @@ PREMIUM ENVELOPE v2
     z-index:1;
 }
 
-.env-right{
+.env-left{
+
     position:absolute;
-    right:0;
+
+    left:0;
     bottom:0;
 
-    width:52%;
+    width:50%;
     height:150px;
 
-    background:#f8f5ef;
+    background:#fcfaf6;
 
-    clip-path:polygon(0 50%,100% 100%,0 100%);
+    clip-path:polygon(100% 0,100% 100%,0 100%);
 
-    z-index:4;
+    z-index:3;
+
 }
 
 .env-right{
