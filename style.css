@@ -1093,10 +1093,10 @@ PREMIUM ENVELOPE v2
 .letter{
     position:absolute;
     left:50%;
-    bottom:10px;
+    bottom:0;
     transform:translateX(-50%);
-    width:88%;
-    height:155px;
+    width:80%;
+    height:145px;
     background:#fff;
     border-radius:10px;
     display:flex;
