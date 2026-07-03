@@ -1428,5 +1428,70 @@ ANİMASYONLAR
     }
 
 }
+/*==================================================
+YENİ PREMIUM ZARF
+==================================================*/
 
+#envelope{
+    position:relative;
+    width:340px;
+    height:235px;
+    margin:auto;
+    cursor:pointer;
+}
+
+/* Arka gövde */
+
+.env-bottom{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:150px;
+    background:#fffdfa;
+    border:1px solid #e7ddcf;
+    border-radius:0 0 18px 18px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+    z-index:1;
+}
+
+/* Sol kapak */
+
+.env-left{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:50%;
+    height:150px;
+    background:#faf7f2;
+    clip-path:polygon(0 0,100% 50%,100% 100%,0 100%);
+    z-index:4;
+}
+
+/* Sağ kapak */
+
+.env-right{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:50%;
+    height:150px;
+    background:#f6f2ec;
+    clip-path:polygon(100% 0,0 50%,0 100%,100% 100%);
+    z-index:4;
+}
+
+/* Üst kapak */
+
+.env-top{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:118px;
+    background:#ffffff;
+    clip-path:polygon(0 0,100% 0,50% 100%);
+    transform-origin:top;
+    z-index:6;
+}
 
