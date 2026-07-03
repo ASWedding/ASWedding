@@ -1464,7 +1464,7 @@ YENİ PREMIUM ZARF
     width:50%;
     height:150px;
     background:#faf7f2;
-    clip-path:polygon(0 0,100% 50%,100% 100%,0 100%);
+    clip-path:polygon(0 0,100% 100%,0 100%);
     z-index:4;
 }
 
@@ -1477,7 +1477,7 @@ YENİ PREMIUM ZARF
     width:50%;
     height:150px;
     background:#f6f2ec;
-    clip-path:polygon(100% 0,0 50%,0 100%,100% 100%);
+    clip-path:polygon(100% 0,100% 100%,0 100%);
     z-index:4;
 }
 
@@ -1500,10 +1500,10 @@ YENİ PREMIUM ZARF
 .letter{
     position:absolute;
     left:50%;
-    bottom:18px;
+    bottom:-5px;
     transform:translateX(-50%);
     width:82%;
-    height:160px;
+    height:145px;
     background:#ffffff;
     border-radius:10px;
     box-shadow:0 8px 18px rgba(0,0,0,.10);
