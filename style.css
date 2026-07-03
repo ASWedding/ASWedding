@@ -1495,3 +1495,50 @@ YENİ PREMIUM ZARF
     z-index:6;
 }
 
+/* Kart */
+
+.letter{
+    position:absolute;
+    left:50%;
+    bottom:18px;
+    transform:translateX(-50%);
+    width:82%;
+    height:160px;
+    background:#ffffff;
+    border-radius:10px;
+    box-shadow:0 8px 18px rgba(0,0,0,.10);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:2;
+}
+
+/* Logo */
+
+.letter-logo{
+    font-family:'Great Vibes',cursive;
+    font-size:66px;
+    color:#b28b4b;
+}
+
+/* Mühür */
+
+.seal{
+    position:absolute;
+    left:50%;
+    top:82px;
+    transform:translateX(-50%);
+    width:74px;
+    height:74px;
+    border-radius:50%;
+    background:radial-gradient(circle,#f2d58c,#c6952f);
+    border:3px solid #d8af56;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Cormorant Garamond',serif;
+    font-size:24px;
+    box-shadow:0 8px 20px rgba(0,0,0,.22);
+    z-index:10;
+}
