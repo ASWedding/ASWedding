@@ -1429,15 +1429,16 @@ ANİMASYONLAR
 
 }
 /*==================================================
-YENİ PREMIUM ZARF
+PREMIUM ENVELOPE
 ==================================================*/
 
 #envelope{
     position:relative;
-    width:340px;
-    height:235px;
-    margin:auto;
+    width:360px;
+    height:240px;
+    margin:0 auto;
     cursor:pointer;
+    perspective:1200px;
 }
 
 /* Arka gövde */
@@ -1449,13 +1450,14 @@ YENİ PREMIUM ZARF
     width:100%;
     height:150px;
     background:#fffdfa;
-    border:1px solid #e7ddcf;
-    border-radius:0 0 18px 18px;
-    box-shadow:0 20px 40px rgba(0,0,0,.15);
+    border:1px solid #e8dfd2;
+    border-radius:0 0 16px 16px;
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+    overflow:hidden;
     z-index:1;
 }
 
-/* Sol kapak */
+/* Sol ön kapak */
 
 .env-left{
     position:absolute;
@@ -1464,11 +1466,11 @@ YENİ PREMIUM ZARF
     width:50%;
     height:150px;
     background:#faf7f2;
-    clip-path:polygon(0 0,100% 100%,0 100%);
-    z-index:4;
+    clip-path:polygon(0 100%,100% 0,100% 100%);
+    z-index:5;
 }
 
-/* Sağ kapak */
+/* Sağ ön kapak */
 
 .env-right{
     position:absolute;
@@ -1476,9 +1478,9 @@ YENİ PREMIUM ZARF
     bottom:0;
     width:50%;
     height:150px;
-    background:#f6f2ec;
-    clip-path:polygon(100% 0,100% 100%,0 100%);
-    z-index:4;
+    background:#f7f3ed;
+    clip-path:polygon(0 0,100% 100%,0 100%);
+    z-index:5;
 }
 
 /* Üst kapak */
@@ -1488,57 +1490,110 @@ YENİ PREMIUM ZARF
     left:0;
     top:0;
     width:100%;
-    height:118px;
-    background:#ffffff;
+    height:120px;
+    background:#fff;
     clip-path:polygon(0 0,100% 0,50% 100%);
     transform-origin:top;
-    z-index:6;
+    z-index:10;
 }
-
-/* Kart */
+/*==================================================
+KART VE MÜHÜR
+==================================================*/
 
 .letter{
     position:absolute;
     left:50%;
-    bottom:-5px;
+    bottom:8px;
     transform:translateX(-50%);
     width:82%;
-    height:145px;
+    height:160px;
     background:#ffffff;
-    border-radius:10px;
-    box-shadow:0 8px 18px rgba(0,0,0,.10);
+    border-radius:12px;
     display:flex;
     justify-content:center;
     align-items:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
     z-index:2;
 }
 
-/* Logo */
-
 .letter-logo{
     font-family:'Great Vibes',cursive;
-    font-size:66px;
+    font-size:64px;
     color:#b28b4b;
+    text-shadow:0 2px 6px rgba(0,0,0,.10);
 }
 
-/* Mühür */
+.letter-logo span{
+    margin:0 10px;
+}
 
 .seal{
     position:absolute;
     left:50%;
-    top:82px;
+    top:84px;
     transform:translateX(-50%);
     width:74px;
     height:74px;
     border-radius:50%;
-    background:radial-gradient(circle,#f2d58c,#c6952f);
-    border:3px solid #d8af56;
-    color:#fff;
+    background:radial-gradient(circle at 30% 30%,#f3d88c,#c7952f);
+    border:3px solid #d8ae53;
     display:flex;
     justify-content:center;
     align-items:center;
+    color:#fff;
     font-family:'Cormorant Garamond',serif;
     font-size:24px;
-    box-shadow:0 8px 20px rgba(0,0,0,.22);
-    z-index:10;
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.22),
+        inset 0 2px 4px rgba(255,255,255,.35);
+    z-index:20;
+}
+
+.seal::before{
+    content:"";
+    position:absolute;
+    inset:8px;
+    border-radius:50%;
+    border:1px dashed rgba(255,255,255,.35);
+   }
+/*==================================================
+ANİMASYONLAR
+==================================================*/
+
+#envelope{
+    transition:transform .45s ease;
+}
+
+#envelope:hover{
+    transform:translateY(-6px);
+}
+
+#envelope.open .env-top{
+    transform:rotateX(180deg);
+    transition:.8s;
+}
+
+#envelope.open .letter{
+    transform:translateX(-50%) translateY(-90px);
+    transition:.8s;
+}
+
+#envelope.open .seal{
+    opacity:0;
+    transform:translateX(-50%) scale(.5);
+    transition:.35s;
+}
+
+@keyframes envelopeDisappear{
+
+    0%{
+        opacity:1;
+        transform:scale(1);
+    }
+
+    100%{
+        opacity:0;
+        transform:scale(.92);
+    }
+
 }
