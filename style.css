@@ -273,6 +273,33 @@ WELCOME
     }
 
 }
+
+/* İlk açılışta davetiye gizli */
+#invitation{
+    display:none;
+    opacity:0;
+    animation:fadeInvitation .8s ease forwards;
+}
+
+/* Loader geçişi */
+#loader{
+    transition:opacity .7s ease;
+}
+
+/* Davetiye görünme animasyonu */
+@keyframes fadeInvitation{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
 /*==================================================
 PREMIUM ENVELOPE
 ==================================================*/
