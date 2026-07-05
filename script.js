@@ -4,7 +4,7 @@
 
 // Sayfa yüklendiğinde
 
-window.addEventListener("load", function () {
+window.addEventListener("load", () => {
 
     const loader = document.getElementById("loader");
 
@@ -16,9 +16,9 @@ window.addEventListener("load", function () {
 
             loader.style.display = "none";
 
-        }, 700);
+        },700);
 
-    }, 3000);
+    },1800);
 
 });
 
