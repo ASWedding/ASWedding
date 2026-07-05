@@ -30,29 +30,34 @@ const envelope = document.getElementById("envelope");
 const welcome = document.getElementById("welcome");
 const invitation = document.getElementById("invitation");
 
-envelope.addEventListener("click", function () {
+if(envelope){
 
-    envelope.classList.add("open");
+    envelope.addEventListener("click",()=>{
 
-setTimeout(() => {
+        envelope.classList.add("open");
 
-    envelope.style.animation = "envelopeDisappear .5s forwards";
+        setTimeout(()=>{
 
-},800);
+            envelope.style.animation="envelopeDisappear .6s forwards";
 
-    setTimeout(() => {
+        },700);
 
-        welcome.style.display = "none";
-        invitation.style.display = "block";
+        setTimeout(()=>{
 
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+            welcome.style.display="none";
 
-    }, 900);
+            invitation.style.display="block";
 
-});
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            });
+
+        },1250);
+
+    });
+
+}
 // ===============================
 // Geri Sayım
 // ===============================
