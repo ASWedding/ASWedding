@@ -324,9 +324,7 @@ PREMIUM ENVELOPE
 /* Arka Gövde */
 
 .env-back{
-
     position:absolute;
-
     left:0;
     bottom:0;
 
@@ -334,23 +332,18 @@ PREMIUM ENVELOPE
     height:150px;
 
     background:linear-gradient(#fffefc,#f7f3ec);
-
     border:1px solid #e7dfd1;
-
     border-radius:0 0 18px 18px;
 
     overflow:hidden;
-
     z-index:1;
-
 }
+
 
 /* Sol Ön Kapak */
 
 .env-left{
-
     position:absolute;
-
     left:0;
     bottom:0;
 
@@ -359,18 +352,21 @@ PREMIUM ENVELOPE
 
     background:#faf7f2;
 
-    clip-path:polygon(0 100%,100% 0,100% 100%);
+    clip-path:polygon(
+        0 0,
+        100% 50%,
+        100% 100%,
+        0 100%
+    );
 
     z-index:4;
-
 }
+
 
 /* Sağ Ön Kapak */
 
 .env-right{
-
     position:absolute;
-
     right:0;
     bottom:0;
 
@@ -379,35 +375,44 @@ PREMIUM ENVELOPE
 
     background:#f6f2eb;
 
-    clip-path:polygon(0 0,100% 100%,0 100%);
+    clip-path:polygon(
+        0 50%,
+        100% 0,
+        100% 100%,
+        0 100%
+    );
 
     z-index:4;
-
 }
+
 
 /* Üst Kapak */
 
 .env-top{
-
     position:absolute;
-
-    top:0;
     left:0;
+    bottom:95px;
 
     width:100%;
-    height:118px;
+    height:150px;
 
     background:linear-gradient(#ffffff,#f5f2ec);
 
-    clip-path:polygon(0 0,100% 0,50% 100%);
+    clip-path:polygon(
+        0 0,
+        100% 0,
+        50% 100%
+    );
 
     transform-origin:top center;
 
     z-index:8;
 
-    transition:.8s;
+    transition:.8s ease;
 
+    box-shadow:0 6px 15px rgba(0,0,0,.08);
 }
+
 /*==================================================
 LETTER
 ==================================================*/
