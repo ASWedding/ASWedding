@@ -758,74 +758,7 @@ ENVELOPE SON DOKUNUŞLAR
     }
 
 }
-/*==================================================
-ENVELOPE OPEN ANIMATION
-==================================================*/
 
-#envelope.open .env-top{
-    transform:rotateX(180deg);
-    transition:.8s ease;
-}
-
-#envelope.open .letter{
-    transform:translateX(-50%) translateY(-95px);
-    transition:.8s ease;
-}
-
-#envelope.open .seal{
-    opacity:0;
-    transform:translateX(-50%) scale(.7);
-    transition:.35s ease;
-}
-
-/* Parlama efekti */
-
-#envelope::after{
-
-    content:"";
-
-    position:absolute;
-
-    top:-25%;
-    left:-40%;
-
-    width:60%;
-    height:160%;
-
-    background:linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,.45),
-        transparent
-    );
-
-    transform:rotate(18deg) translateX(-220%);
-
-    pointer-events:none;
-
-}
-
-#envelope:hover::after{
-
-    transition:1.3s;
-
-    transform:rotate(18deg) translateX(420%);
-
-}
-
-@keyframes envelopeDisappear{
-
-    from{
-        opacity:1;
-        transform:scale(1);
-    }
-
-    to{
-        opacity:0;
-        transform:scale(.92);
-    }
-
-}
 /*==================================================
 MOBILE
 ==================================================*/
