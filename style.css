@@ -391,7 +391,7 @@ PREMIUM ENVELOPE
 .env-top{
     position:absolute;
     left:0;
-    bottom:95px;
+    top:95px;
 
     width:100%;
     height:150px;
