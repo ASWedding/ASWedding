@@ -405,7 +405,7 @@ PREMIUM ENVELOPE
     );
 
     transform-origin:top center;
-transform:rotateX(180deg);
+transform:scaleY(-1);
 
     z-index:8;
 
