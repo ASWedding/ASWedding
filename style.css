@@ -703,61 +703,6 @@ ENVELOPE SON DOKUNUŞLAR
 
 }
 
-/* Mobil */
-
-@media(max-width:768px){
-
-    #envelope{
-
-        width:300px;
-        height:205px;
-
-    }
-
-    .env-back{
-
-        height:128px;
-
-    }
-
-    .env-left,
-    .env-right{
-
-        height:128px;
-
-    }
-
-    .env-top{
-
-        height:102px;
-
-    }
-
-    .letter{
-
-        width:84%;
-        height:128px;
-
-    }
-
-    .letter-logo{
-
-        font-size:50px;
-
-    }
-
-    .seal{
-
-        width:64px;
-        height:64px;
-
-        top:72px;
-
-        font-size:20px;
-
-    }
-
-}
 
 /*==================================================
 MOBILE
